@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FEFAE0;
+  --bg-secondary: #FAEDCE;
+  --bg-tertiary: #E0E5B6;
+  --bg-quaternary: #CCD5AE;
+}
+
+body {
+  background: var(--bg-primary);
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@import url('../components/share//HomeNavbar/style.css');
+
+.animate__animated{
+  animation-duration: 1s;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
